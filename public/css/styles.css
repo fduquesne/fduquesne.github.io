@@ -1,0 +1,56 @@
+/********************/
+/*     GENERAL      */
+/********************/
+
+html,
+body {
+    background: #d5dde4;
+    color: #1d1d1e;
+    font-family: Muli, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: inherit;
+    outline: none;
+}
+
+/********************/
+/*     SIDEBAR      */
+/********************/
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    background: #1d1d1e;
+    color: #d5dde4;
+}
+
+.sidebar--informations {
+    width: 100%;
+    margin: 10px 0;
+    padding: 30px 100px;
+}
+
+img#profile-picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.sidebar--information {
+    padding: 5px 0 0;
+}
+
+.sidebar--name {
+    font-size: 22px;
+}
