@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 
 import SideBar from '../components/Sidebar';
 
-var Home = props => {
+let Home = props => {
     return (
         <div className="container">
             <Head>

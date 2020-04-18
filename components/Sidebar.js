@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding, faMapMarkerAlt, faAt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-var SideBar = ({ infos }) => {
+let SideBar = ({ infos }) => {
     return (
         <div id="sidebar">
             <div className="sidebar--informations">
@@ -24,7 +24,6 @@ var SideBar = ({ infos }) => {
                     <div className="sidebar--information-icon">
                         <FontAwesomeIcon icon={faAt} />
                     </div>
-                    <div className="sidebar--information-text">fduquesne@icloud.com</div>
                     <div className="sidebar--information-text">{infos.email}</div>
                 </div>
                 <div className="sidebar--information">
