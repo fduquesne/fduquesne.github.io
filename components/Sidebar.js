@@ -42,12 +42,16 @@ var SideBar = ({ infos }) => {
             </div>
             <div className="sidebar--informations">
                 <div id="sidebar--links">
-                    <div className="sidebar--link">
-                        <FontAwesomeIcon icon={faGithub} />
-                    </div>
-                    <div className="sidebar--link">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                    </div>
+                    <a href={infos.github_url}>
+                        <div className="sidebar--link">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fduquesne/">
+                        <div className="sidebar--link">
+                            <FontAwesomeIcon icon={faLinkedin} />
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
