@@ -6,7 +6,9 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "test": "jest --coverage"
+        "export": "next export",
+        "test": "jest --coverage",
+        "deploy": "sh deploy.sh"
     },
     "dependencies": {
         "next": "9.3.5",
