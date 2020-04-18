@@ -27,10 +27,18 @@ body {
     bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 450px;
     background: #1d1d1e;
     color: #d5dde4;
+}
+
+#sidebar--container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .sidebar--informations {
@@ -80,4 +88,15 @@ img#profile-picture {
 
 .sidebar--link:active {
     background: linear-gradient(145deg, #151516, #262627);
+}
+
+#footer {
+    width: 100%;
+    padding: 0 0 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#footer a {
+    color: #74b9ff;
 }
