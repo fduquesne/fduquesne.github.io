@@ -61,7 +61,7 @@ let SideBar = ({ infos }) => {
                     🚀Developed with <a href="https://nextjs.org/">Next.js</a> by <a href={infos.github_url}>Florian Duquesne</a>
                 </div>
                 <div>
-                    🎨UI inspired by <a href="https://imfunniee.github.io/gitfolio/">imfunniee</a>
+                    🎨UI inspired by <a href="https://imfunniee.github.io/gitfolio/">imfunniee</a> with Neumorphism trend
                 </div>
             </div>
         </div>
