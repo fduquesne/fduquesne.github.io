@@ -46,21 +46,19 @@ window.onload = () => {
         this.pos = new Vector(x, y);
         this.vel = new Vector();
         this.acc = new Vector();
-        this.radius = getRandomSize();
+        this.size = getRandomSize();
         this.angle = Math.random() * Math.PI * 2;
-        this.xOffset = Math.min(Math.max(Math.sin(this.angle) * this.radius, -1), 1);
+        this.xOffset = Math.min(Math.max(Math.sin(this.angle) * this.size, -1), 1);
 
         this.isOffScreen = () => {
             return (
-                this.pos.y > canvas.getBoundingClientRect().height + this.radius ||
-                this.pos.x < 0 ||
-                this.pos.x > canvas.getBoundingClientRect().width
+                this.pos.y > canvas.getBoundingClientRect().height + this.size || this.pos.x < 0 || this.pos.x > canvas.getBoundingClientRect().width
             );
         };
 
         this.applyForce = force => {
             let f = force.copy();
-            f.mult(this.radius);
+            f.mult(this.size);
 
             this.acc.add(f);
         };
@@ -69,7 +67,7 @@ window.onload = () => {
             this.pos.x += this.xOffset;
 
             this.vel.add(this.acc);
-            this.vel.limit(this.radius);
+            this.vel.limit(this.size);
             this.pos.add(this.vel);
             this.acc.mult(0);
         };
@@ -78,8 +76,8 @@ window.onload = () => {
             this.elem.style.position = 'absolute';
             this.elem.style.left = this.pos.x + 'px';
             this.elem.style.top = this.pos.y + 'px';
-            this.elem.style.width = this.radius + 'px';
-            this.elem.style.height = this.radius + 'px';
+            this.elem.style.width = this.size + 'px';
+            this.elem.style.height = this.size + 'px';
             this.elem.style.borderRadius = '50%';
             this.elem.style.backgroundColor = '#b8b8be';
             this.elem.style.zIndex = '-999';
