@@ -1,3 +1,9 @@
+/**
+ * This Snowfall has been inspired by @CodingTrain
+ * @see https://www.youtube.com/watch?v=cl-mHFCGzYk (This code has been inspired by this video).
+ * @see https://github.com/CodingTrain (Offical github organisation of @CodingTrain)
+ */
+
 window.onload = () => {
     const canvas = this.document.getElementById('sidebar--snowfall');
 
