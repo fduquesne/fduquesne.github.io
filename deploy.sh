@@ -1,7 +1,7 @@
 BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
 
 if [ BRANCH_NAME == 'production' ]; then
-    # Re-initialize dependencies and last exports/builds
+    # Remove npm dependencies and last exports/builds
     rm -rf node_modules/
     rm -rf .next/
     rm -rf out/
